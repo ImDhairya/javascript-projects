@@ -1,0 +1,68 @@
+body{
+  background-color: rgb(0, 0, 0);
+  color: blanchedalmond;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+}
+#heading{
+  text-align: center;
+}
+
+.btn{
+  color: aqua;
+  position: relative;
+  text-align: center;
+  padding: 10px;
+}
+
+#btn1, #btn2 {
+  margin-top: 15px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(54, 59, 154);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.area{
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#in{
+  height: 90px;
+  width: 700px;
+  background-color: rgb(48, 210, 30);
+  border-radius: 22px;
+  padding: 10px;
+  min-height: 90px;
+  min-width: 694px;
+  max-width: 694px;
+  max-height: 294px;
+}
+
+.yourNotes{
+  margin: 48px auto;
+  place-content: center;
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 16px;
+
+}
+
+.note{
+  height: 200px;
+  width: 190px;
+  background-color: black;
+  border-radius: 20px;
+  padding: 19px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0px;
+  border-color: rgb(57, 19, 19);
+}

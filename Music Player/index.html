@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img
+          src="/WhatsApp Image 2023-10-30 at 22.01.24_29294eb0.jpg"
+          class="song-img"
+        />
+        <h1>Despacito</h1>
+        <p>Luis Fonsi</p>
+        <audio  id = 'song'>
+          <source src = "/Agar Tum Saath Ho - Alka Yagnik, Arijit Singh.m4a" type = 'audio/mpeg'>
+        <input type="range" id = 'progress' value=" 0">
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"> </i></div>
+          <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon" ></i></div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

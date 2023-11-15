@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  justify-content: space-between;
+}
+
+.buttons {
+  margin: 15px 0px;
+  padding: 3px;
+}
+
+.saved-notes {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.saaraKuch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

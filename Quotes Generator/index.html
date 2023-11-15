@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote Generator</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+  <div class="container">
+    <header>
+      <p class="title">Javascript Quote Generator</p>
+    </header>
+    <div class="text">
+      <p>I do the very best I know how- the very best I candfadsfasdfasdfasdf</p>
+    </div>
+
+    <div class="author">
+      <h3>Abraham gandhi patel</h3>
+    </div>
+
+    <button class = 'btn'>New Quote</button>
+  </div>
+</body>
+<script>
+  const innerText = document.querySelector('.text')
+  const author = document.querySelector('.author')
+  const btn = document.querySelector('.btn')
+
+  const data = {
+    "asdfasdf" : "fdsf",
+    'adsfdsfndsfsddddd' : 'ddddd',
+    'adsfdsfndsdddddddd' : 'dadfdd',
+    'addddd' : 'dvvvvvvd',
+  }
+
+  const keys = Object.keys(data);
+  const values = Object.values(data);
+
+  btn.addEventListener('click', () => {
+
+    const random = Math.floor(Math.random() * keys.length);
+
+    innerText.textContent = keys[random];
+
+
+    author.textContent = values[random];
+  })
+
+</script>
+</html>

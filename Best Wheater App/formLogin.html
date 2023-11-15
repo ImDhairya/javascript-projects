@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="return takeValue()">
+      <input name="Name" id="name" placeholder="Enter your name" type="text" />
+      <input
+        name="Number"
+        id="number"
+        type="text"
+        placeholder="Enter you phone number"
+      />
+      <input
+        name="password"
+        id="password"
+        placeholder="Enter your password"
+        type="password"
+      />
+      <input name="Submit" id="submit" type="submit" value="Submit" />
+    </form>
+    <div id="output"></div>
+    <script>
+      function takeValue() {
+        event.preventDefault();
+        var outputDiv = document.getElementById("output");
+        var name = document.getElementById("name").value;
+        var password = document.getElementById("password").value;
+        var number = document.getElementById("number").value;
+        outputDiv.innerHTML =
+          "Your name is = " +
+          name +
+          "<br>" +
+          "Your mobile is = " +
+          number +
+          "<br>" +
+          "Your password is = " +
+          password;
+      }
+    </script>
+  </body>
+</html>
